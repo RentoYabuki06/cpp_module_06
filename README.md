@@ -26,6 +26,14 @@ Located in [ex01/](ex01/) directory, this exercise implements a [`Serializer`](e
 
 This demonstrates how pointers can be safely converted to raw data and back using `reinterpret_cast` - a powerful but potentially dangerous C++ casting operator.
 
+Common use cases for serialization and deserialization include:
+- Network communication: Converting complex data structures into a format that can be transmitted over a network
+- File I/O: Saving program state or data structures to files for later retrieval
+- Inter-process communication (IPC): Sharing data between different processes
+- Cache systems: Storing complex objects in memory caches
+- Game save states: Preserving game progress and object states
+- Database operations: Converting between in-memory objects and database storage formats
+
 ## Exercise 02: Identify Real Type
 
 Located in [ex02/](ex02/) directory, this exercise implements:
