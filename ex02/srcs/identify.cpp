@@ -6,7 +6,7 @@
 /*   By: yabukirento <yabukirento@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/17 20:15:17 by yabukirento       #+#    #+#             */
-/*   Updated: 2025/05/17 20:16:42 by yabukirento      ###   ########.fr       */
+/*   Updated: 2025/06/04 21:37:35 by yabukirento      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,15 @@
 #include <ctime>
 #include <typeinfo>
 
+namespace {
+    bool initialized = false;
+}
+
 Base* generate() {
-    std::srand(std::time(NULL));
+    if (!initialized) {
+        std::srand(static_cast<unsigned int>(std::time(nullptr)));
+        initialized = true;
+    }
     int r = std::rand() % 3;
     switch (r) {
         case 0: return new A;
