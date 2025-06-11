@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   identify.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yabukirento <yabukirento@student.42.fr>    +#+  +:+       +#+        */
+/*   By: ryabuki <ryabuki@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/17 20:15:17 by yabukirento       #+#    #+#             */
-/*   Updated: 2025/06/04 21:37:35 by yabukirento      ###   ########.fr       */
+/*   Updated: 2025/06/11 13:56:31 by ryabuki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ namespace {
 
 Base* generate() {
     if (!initialized) {
-        std::srand(static_cast<unsigned int>(std::time(nullptr)));
+        std::srand(static_cast<unsigned int>(std::time(NULL)));
         initialized = true;
     }
     int r = std::rand() % 3;

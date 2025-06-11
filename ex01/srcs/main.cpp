@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yabukirento <yabukirento@student.42.fr>    +#+  +:+       +#+        */
+/*   By: ryabuki <ryabuki@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/17 20:00:39 by yabukirento       #+#    #+#             */
-/*   Updated: 2025/05/17 20:07:55 by yabukirento      ###   ########.fr       */
+/*   Updated: 2025/06/11 13:54:53 by ryabuki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,8 +26,8 @@ int main() {
     std::cout << "Original Data pointer : " << &original << std::endl;
 
     // シリアライズ（ポインタ→整数）
-    uintptr_t raw = Serializer::serialize(&original);
-    std::cout << "Serialized uintptr_t   : " << raw << std::endl;
+    unsigned long raw = Serializer::serialize(&original);
+    std::cout << "Serialized unsigned long   : " << raw << std::endl;
 
     // デシリアライズ（整数→ポインタ）
     Data* deserialized = Serializer::deserialize(raw);

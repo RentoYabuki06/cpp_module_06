@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Serializer.hpp                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yabukirento <yabukirento@student.42.fr>    +#+  +:+       +#+        */
+/*   By: ryabuki <ryabuki@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/17 19:58:50 by yabukirento       #+#    #+#             */
-/*   Updated: 2025/05/17 20:08:14 by yabukirento      ###   ########.fr       */
+/*   Updated: 2025/06/11 13:54:15 by ryabuki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,8 @@ private:
 	Serializer& operator=(const Serializer& other);
 	~Serializer();
 public:
-	static uintptr_t serialize(Data* ptr);
-	static Data* deserialize(uintptr_t raw);
+	static unsigned long serialize(Data* ptr);
+	static Data* deserialize(unsigned long raw);
 };
 
 #endif

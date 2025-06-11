@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ScalarConverter.hpp                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yabukirento <yabukirento@student.42.fr>    +#+  +:+       +#+        */
+/*   By: ryabuki <ryabuki@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/17 18:34:51 by yabukirento       #+#    #+#             */
-/*   Updated: 2025/05/17 19:43:13 by yabukirento      ###   ########.fr       */
+/*   Updated: 2025/06/11 13:47:20 by ryabuki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,9 @@
 #include <string>
 #include <iostream>
 #include <iomanip>
+#include <limits>
+#include <climits>
+#include <cstdlib>
 
 class ScalarConverter
 {
