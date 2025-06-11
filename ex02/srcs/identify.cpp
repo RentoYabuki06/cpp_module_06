@@ -6,7 +6,7 @@
 /*   By: ryabuki <ryabuki@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/17 20:15:17 by yabukirento       #+#    #+#             */
-/*   Updated: 2025/06/11 13:56:31 by ryabuki          ###   ########.fr       */
+/*   Updated: 2025/06/11 13:59:59 by ryabuki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,18 +16,9 @@
 #include "../includes/C.hpp"
 #include <iostream>
 #include <cstdlib>
-#include <ctime>
 #include <typeinfo>
 
-namespace {
-    bool initialized = false;
-}
-
 Base* generate() {
-    if (!initialized) {
-        std::srand(static_cast<unsigned int>(std::time(NULL)));
-        initialized = true;
-    }
     int r = std::rand() % 3;
     switch (r) {
         case 0: return new A;

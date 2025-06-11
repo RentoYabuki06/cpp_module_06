@@ -3,19 +3,22 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yabukirento <yabukirento@student.42.fr>    +#+  +:+       +#+        */
+/*   By: ryabuki <ryabuki@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/17 20:15:34 by yabukirento       #+#    #+#             */
-/*   Updated: 2025/06/04 21:36:19 by yabukirento      ###   ########.fr       */
+/*   Updated: 2025/06/11 14:00:09 by ryabuki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/identify.hpp"
 #include <iostream>
+#include <ctime>
+#include <cstdlib>
+#include <typeinfo>
 
 int main() {
     std::cout << "\n=== Running 10 Random Type Identification Tests ===\n" << std::endl;
-
+    std::srand(static_cast<unsigned int>(std::time(NULL)));
     for (int i = 0; i < 10; ++i) {
         std::cout << "Test " << i + 1 << ":" << std::endl;
         Base* obj = generate();
